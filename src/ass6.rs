@@ -9,7 +9,7 @@ pub fn ass() {
 
  }
 
- fn output(current_age_in: String,retirement_age_in: String ) -> String{
+ fn output(current_age_in   : String,retirement_age_in: String ) -> String{
     let dt = Utc::now();
     let current_age_out = no_space(inputs(current_age_in, "current age".to_string()));
     let retirement_age_out = no_space(inputs(retirement_age_in, "the age you want to retire as".to_string()));
@@ -47,7 +47,7 @@ pub fn ass() {
 
 fn no_space(x : String) -> String{
     x.replace(" ", "").trim().to_string()
-  }
+  } 
 
 fn age_diff(x : String, y: String) -> String{
     let num1: i32 = x.parse().unwrap();
