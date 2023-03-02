@@ -19,7 +19,6 @@ fn inputs(mut input1: String, extra: String) -> String{
     print!("Enter your {} postive number: ", extra);
     io::stdout().flush().ok();
     std::io::stdin().read_line(&mut input1).ok();
-    let input2 = input1;
     for i in no_space(input2.trim().to_string()).chars(){
         if i.is_numeric() == false {
             println!("\nplease put in a nummber without letters or negative numbers\n");
@@ -28,7 +27,7 @@ fn inputs(mut input1: String, extra: String) -> String{
             return output1;
         } 
     };
-    let output2 = input2;
+    let output2 = input1;
     return output2;
 }
 

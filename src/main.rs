@@ -1,5 +1,5 @@
-pub mod ass7;
+pub mod ass6;
 
 fn main() {
-   ass7::ass()
+   ass6::ass()
 }
